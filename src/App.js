@@ -4,6 +4,7 @@ import Navbar from './layout/Navbar';
 import Home from './page/Home';
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import Adduser from './user/Adduser';
+import Edituser from './user/Edituser';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
        <Routes>
         <Route exac path="/" element={<Home/>}/>
         <Route exac path="/adduser" element={<Adduser/>}/>
+        <Route exac path="/edituser/:id" element={<Edituser/>}/>
        </Routes>
       </Router>
      
